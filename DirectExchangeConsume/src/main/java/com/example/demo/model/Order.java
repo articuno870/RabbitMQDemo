@@ -9,9 +9,10 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class OrderStatus {
+public class Order {
 
-	private Order order;
-	private String status;// progress,completed
-	private String message;
+    private String orderId;
+    private String name;
+    private int qty;
+    private double price;
 }
